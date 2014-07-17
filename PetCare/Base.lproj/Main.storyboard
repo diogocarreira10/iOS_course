@@ -128,10 +128,18 @@
                                             <tabBarItem systemItem="more" id="Dbg-Uf-QZj"/>
                                         </items>
                                     </tabBar>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9X-z3-aZ4">
-                                        <rect key="frame" x="139" y="107" width="42" height="21"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h9X-z3-aZ4">
+                                        <rect key="frame" x="5" y="91" width="320" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ue-1a-aqr">
+                                        <rect key="frame" x="10" y="168" width="310" height="70"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -143,6 +151,7 @@
                     <navigationItem key="navigationItem" id="jOv-eI-4c8"/>
                     <connections>
                         <outlet property="output" destination="h9X-z3-aZ4" id="90f-To-c0e"/>
+                        <outlet property="output2" destination="6Ue-1a-aqr" id="C93-Zj-Cfh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5T-vG-6JP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -307,6 +316,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DNH-tx-KoO"/>
+                    <connections>
+                        <outlet property="age_value" destination="4xc-BM-1nW" id="pJR-gD-Rcl"/>
+                        <outlet property="gender_value" destination="FAe-zR-KgH" id="mst-Xg-9qj"/>
+                        <outlet property="name_value" destination="IzB-K0-bS5" id="rdx-JK-FMW"/>
+                        <outlet property="race_value" destination="wcb-Jc-T37" id="Qxl-Uo-n48"/>
+                        <outlet property="type_value" destination="IBr-Pi-uTr" id="4EW-Xd-gyG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jwj-N4-PP7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

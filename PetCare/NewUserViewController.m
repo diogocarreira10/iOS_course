@@ -7,7 +7,7 @@
 //
 
 #import "NewUserViewController.h"
-#import "pet.h"
+#import "DCUserPet.h"
 
 @interface NewUserViewController ()
 
@@ -43,7 +43,7 @@
 
 - (IBAction)save:(id)sender {
     
-    pet *mypet= [[pet alloc]init];
+    DCUserPet *mypet= [[DCUserPet alloc]init];
     mypet.name=_name_value.text;
     mypet.type=_type_value.text;
     mypet.race=_race_value.text;
@@ -51,45 +51,15 @@
     mypet.age=_age_value.text;
 
     
+    NSData *petData = [NSKeyedArchiver archivedDataWithRootObject:mypet];
+    [[NSUserDefaults standardUserDefaults]setObject:petData forKey:@"pet1"];
+    
 }
 
 
 
 - (IBAction)changes:(id)sender {
-    NSLog(@"WORKS");
-
-    pet *mypet= [[pet alloc]init];
-    
-    if(_name_value.text.length != 0)
-        mypet.name=_name_value.text;
-    else
-        NSLog(@"error 404, missing name value");
-    
-    if(_type_value.text.length != 0)
-        mypet.type=_type_value.text;
-    else
-        NSLog(@"error 404, missing type value");
-    
-    if(_race_value.text.length != 0)
-        mypet.race=_race_value.text;
-    else
-        NSLog(@"error 404, missing race value");
-    
-    if(_gender_value.text.length != 0)
-        mypet.gender=_gender_value.text;
-    else
-        NSLog(@"error 404, missing gender value");
-    
-    if(_age_value.text.length != 0)
-        mypet.age=_age_value.text;
-    else
-        NSLog(@"error 404, missing age value");
-    
-    pet *mypet2 = [pet print:mypet];
-    
-    
-    _result_string.text = mypet2.string;
-    NSLog(@"%@",mypet2.string);
+    NSLog(@"...");
 }
 
 @end

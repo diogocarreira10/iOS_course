@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5802C263196F474E006407C9 /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5802C262196F474E006407C9 /* NewUserViewController.m */; };
+		5839D03B19784BC300FBB177 /* DCUserPet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5839D03A19784BC300FBB177 /* DCUserPet.m */; };
 		5860204E1969AB6D006F2DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5860204D1969AB6D006F2DE8 /* Foundation.framework */; };
 		586020501969AB6D006F2DE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5860204F1969AB6D006F2DE8 /* CoreGraphics.framework */; };
 		586020521969AB6D006F2DE8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 586020511969AB6D006F2DE8 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		5802C261196F474E006407C9 /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
 		5802C262196F474E006407C9 /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
+		5839D03919784BC300FBB177 /* DCUserPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUserPet.h; sourceTree = "<group>"; };
+		5839D03A19784BC300FBB177 /* DCUserPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUserPet.m; sourceTree = "<group>"; };
 		5860204A1969AB6D006F2DE8 /* PetCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5860204D1969AB6D006F2DE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5860204F1969AB6D006F2DE8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -148,6 +151,8 @@
 				586020561969AB6D006F2DE8 /* InfoPlist.strings */,
 				586020591969AB6D006F2DE8 /* main.m */,
 				5860205B1969AB6D006F2DE8 /* PetCare-Prefix.pch */,
+				5839D03919784BC300FBB177 /* DCUserPet.h */,
+				5839D03A19784BC300FBB177 /* DCUserPet.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			files = (
 				5860205A1969AB6D006F2DE8 /* main.m in Sources */,
 				58C16B22196F5CE4008877BF /* LocalUserViewController.m in Sources */,
+				5839D03B19784BC300FBB177 /* DCUserPet.m in Sources */,
 				5860208A1969C389006F2DE8 /* pet.m in Sources */,
 				586020641969AB6D006F2DE8 /* DCViewController.m in Sources */,
 				5860205E1969AB6D006F2DE8 /* DCAppDelegate.m in Sources */,

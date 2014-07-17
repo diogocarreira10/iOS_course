@@ -7,7 +7,7 @@
 //
 
 #import "LocalUserViewController.h"
-#import "pet.h"
+#import "DCUserPet.h"
 
 @interface LocalUserViewController ()
 
@@ -28,6 +28,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    NSData *petData = [[NSUserDefaults standardUserDefaults]objectForKey:@"pet1"];
+    DCUserPet *mypet;
+    if(petData)
+    {
+    mypet = [NSKeyedUnarchiver unarchiveObjectWithData:petData];
+    
+    NSString *mystring= [NSString stringWithFormat:@"Your %@ named %@",mypet.type,mypet.name];
+    
+    NSString *mystring2= [NSString stringWithFormat:@"is an %@ %@ with %@ years old",mypet.race,mypet.gender, mypet.age];
+        
+        
+    NSLog(@"%@",mystring);
+    NSLog(@"%@",mystring2);
+        
+    _output.text = mystring;
+    _output2.text = mystring2;
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning

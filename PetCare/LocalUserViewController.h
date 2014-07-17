@@ -11,5 +11,6 @@
 @interface LocalUserViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *output;
+@property (weak, nonatomic) IBOutlet UILabel *output2;
 
 @end
