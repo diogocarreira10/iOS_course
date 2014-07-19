@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5802C263196F474E006407C9 /* NewUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5802C262196F474E006407C9 /* NewUserViewController.m */; };
+		58353F1C197A9415003B2866 /* login_icon.png.png in Resources */ = {isa = PBXBuildFile; fileRef = 58353F1B197A9415003B2866 /* login_icon.png.png */; };
+		58353F1F197A96B0003B2866 /* DCLoginControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58353F1E197A96B0003B2866 /* DCLoginControllerViewController.m */; };
 		5839D03B19784BC300FBB177 /* DCUserPet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5839D03A19784BC300FBB177 /* DCUserPet.m */; };
 		5860204E1969AB6D006F2DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5860204D1969AB6D006F2DE8 /* Foundation.framework */; };
 		586020501969AB6D006F2DE8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5860204F1969AB6D006F2DE8 /* CoreGraphics.framework */; };
@@ -41,6 +43,9 @@
 /* Begin PBXFileReference section */
 		5802C261196F474E006407C9 /* NewUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewUserViewController.h; sourceTree = "<group>"; };
 		5802C262196F474E006407C9 /* NewUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewUserViewController.m; sourceTree = "<group>"; };
+		58353F1B197A9415003B2866 /* login_icon.png.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_icon.png.png; sourceTree = "<group>"; };
+		58353F1D197A96B0003B2866 /* DCLoginControllerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCLoginControllerViewController.h; sourceTree = "<group>"; };
+		58353F1E197A96B0003B2866 /* DCLoginControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCLoginControllerViewController.m; sourceTree = "<group>"; };
 		5839D03919784BC300FBB177 /* DCUserPet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCUserPet.h; sourceTree = "<group>"; };
 		5839D03A19784BC300FBB177 /* DCUserPet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCUserPet.m; sourceTree = "<group>"; };
 		5860204A1969AB6D006F2DE8 /* PetCare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetCare.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +134,8 @@
 				5860205C1969AB6D006F2DE8 /* DCAppDelegate.h */,
 				5860205D1969AB6D006F2DE8 /* DCAppDelegate.m */,
 				5860205F1969AB6D006F2DE8 /* Main.storyboard */,
+				58353F1D197A96B0003B2866 /* DCLoginControllerViewController.h */,
+				58353F1E197A96B0003B2866 /* DCLoginControllerViewController.m */,
 				58C16B20196F5CE4008877BF /* LocalUserViewController.h */,
 				58C16B21196F5CE4008877BF /* LocalUserViewController.m */,
 				5802C261196F474E006407C9 /* NewUserViewController.h */,
@@ -145,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				586020891969C389006F2DE8 /* pet.m */,
+				58353F1B197A9415003B2866 /* login_icon.png.png */,
 				586020881969C389006F2DE8 /* pet.h */,
 				586020861969B847006F2DE8 /* introimage.png */,
 				586020551969AB6D006F2DE8 /* PetCare-Info.plist */,
@@ -253,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				586020871969B847006F2DE8 /* introimage.png in Resources */,
+				58353F1C197A9415003B2866 /* login_icon.png.png in Resources */,
 				586020661969AB6D006F2DE8 /* Images.xcassets in Resources */,
 				586020581969AB6D006F2DE8 /* InfoPlist.strings in Resources */,
 				586020611969AB6D006F2DE8 /* Main.storyboard in Resources */,
@@ -279,6 +288,7 @@
 				5839D03B19784BC300FBB177 /* DCUserPet.m in Sources */,
 				5860208A1969C389006F2DE8 /* pet.m in Sources */,
 				586020641969AB6D006F2DE8 /* DCViewController.m in Sources */,
+				58353F1F197A96B0003B2866 /* DCLoginControllerViewController.m in Sources */,
 				5860205E1969AB6D006F2DE8 /* DCAppDelegate.m in Sources */,
 				5802C263196F474E006407C9 /* NewUserViewController.m in Sources */,
 			);
