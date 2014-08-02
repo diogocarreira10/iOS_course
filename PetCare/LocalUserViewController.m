@@ -8,6 +8,7 @@
 
 #import "LocalUserViewController.h"
 #import "DCUserPet.h"
+#import "DCPetTableViewController.h"
 
 @interface LocalUserViewController ()
 
@@ -29,7 +30,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    NSData *petData = [[NSUserDefaults standardUserDefaults]objectForKey:@"pet1"];
+    
+    /*NSData *petData = [[NSUserDefaults standardUserDefaults]objectForKey:@"NewUserViewController"];
     DCUserPet *mypet;
     if(petData)
     {
@@ -45,9 +47,23 @@
         
     _output.text = mystring;
     _output2.text = mystring2;
+    }*/
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    if(_pet){
+        
+        NSString *mystring= [NSString stringWithFormat:@"%@",_pet.name];
+        _label_name.text = mystring;
+        
+        
     }
     
 }
+
 
 - (void)didReceiveMemoryWarning
 {
@@ -62,5 +78,17 @@
 }
 
 
+- (IBAction)your_details:(id)sender {
+    
+    
+    
+    NSString *mystring= [NSString stringWithFormat:@"%@",_pet.name];
+    _label_name.text = mystring;
+    NSString *mystring2= [NSString stringWithFormat:@"Your %@ named %@ is an %@ %@ with %@ years old",_pet.type,_pet.name,_pet.race,_pet.gender,_pet.age];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Details" message:mystring2 delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
+
+    
+}
 @end
 

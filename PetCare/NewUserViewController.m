@@ -8,6 +8,7 @@
 
 #import "NewUserViewController.h"
 #import "DCUserPet.h"
+#import "DCPetTableViewController.h"
 
 @interface NewUserViewController ()
 
@@ -30,6 +31,22 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [super viewWillAppear:animated];
+    
+    if(_pet){
+        
+        self.name_value.text = _pet.name;
+        self.gender_value.text = _pet.gender;
+        self.type_value.text = _pet.type;
+        self.race_value.text = _pet.race;
+        self.age_value.text = _pet.age;
+        
+    }
+        
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -41,6 +58,7 @@
     [self.view endEditing:YES];
 }
 
+
 - (IBAction)save:(id)sender {
     
     DCUserPet *mypet= [[DCUserPet alloc]init];
@@ -49,17 +67,12 @@
     mypet.race=_race_value.text;
     mypet.gender=_gender_value.text;
     mypet.age=_age_value.text;
+    
+    if([[self delegate] respondsToSelector:@selector(addPet:)])
+        [[self delegate] addPet:mypet];
 
-    
-    NSData *petData = [NSKeyedArchiver archivedDataWithRootObject:mypet];
-    [[NSUserDefaults standardUserDefaults]setObject:petData forKey:@"pet1"];
-    
 }
 
 
-
-- (IBAction)changes:(id)sender {
-    NSLog(@"...");
-}
 
 @end
