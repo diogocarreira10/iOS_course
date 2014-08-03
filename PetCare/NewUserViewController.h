@@ -17,19 +17,21 @@
 
 
 
-@interface NewUserViewController : UIViewController
+@interface NewUserViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationBarDelegate> //needed for add image
 
 @property (weak, nonatomic) IBOutlet UITextField *name_value;
 @property (weak, nonatomic) IBOutlet UITextField *type_value;
 @property (weak, nonatomic) IBOutlet UITextField *race_value;
-@property (weak, nonatomic) IBOutlet UITextField *gender_value;
-@property (weak, nonatomic) IBOutlet UITextField *age_value;
+
 
 
 - (IBAction)save:(id)sender;
 
 @property (nonatomic) id delegate;
 @property (nonatomic) DCUserPet *pet;
+@property (weak, nonatomic) IBOutlet UIButton *inserirNovaimagemButton;
+@property (weak, nonatomic) IBOutlet UIImageView *petImageView;
 
+- (IBAction)adicionarImagem:(id)sender;
 
 @end

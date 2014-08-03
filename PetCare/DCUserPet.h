@@ -13,7 +13,7 @@
 @property (nonatomic) NSString* name;
 @property (nonatomic) NSString* race;
 @property (nonatomic) NSString* type;
-@property (nonatomic) NSString* gender;
-@property (nonatomic) NSString* age;
+@property (nonatomic) UIImage *cover;
+
 
 @end

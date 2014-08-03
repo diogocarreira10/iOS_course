@@ -11,8 +11,7 @@
 static NSString* nameKey = @"DCUnameKey";
 static NSString* typeKey = @"DCUtypeKey";
 static NSString* raceKey = @"DCUraceKey";
-static NSString* genderKey = @"DCUgenderKey";
-static NSString* ageKey = @"DCUageKey";
+
 
 
 @implementation DCUserPet
@@ -25,8 +24,13 @@ static NSString* ageKey = @"DCUageKey";
     self.name = [aDecoder decodeObjectForKey:nameKey];
     self.type = [aDecoder decodeObjectForKey:typeKey];
     self.race = [aDecoder decodeObjectForKey:raceKey];
-    self.gender = [aDecoder decodeObjectForKey:genderKey];
-    self.age = [aDecoder decodeObjectForKey:ageKey];
+    
+    NSData *imageData = [aDecoder decodeObjectForKey:@"DCImagem"];
+    if(imageData){
+        self.cover = [UIImage imageWithData:imageData];
+        
+    }
+
     
     return self;
 }
@@ -36,8 +40,10 @@ static NSString* ageKey = @"DCUageKey";
     [aCoder encodeObject:self.name forKey:nameKey];
     [aCoder encodeObject:self.type forKey:typeKey];
     [aCoder encodeObject:self.race forKey:raceKey];
-    [aCoder encodeObject:self.gender forKey:genderKey];
-    [aCoder encodeObject:self.age forKey:ageKey];
+
+    
+    NSData *imageData = UIImagePNGRepresentation(self.cover);
+    [aCoder encodeObject:imageData forKey:@"DCImagem"];
     
 }
 

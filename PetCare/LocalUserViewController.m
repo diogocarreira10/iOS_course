@@ -59,6 +59,7 @@
         NSString *mystring= [NSString stringWithFormat:@"%@",_pet.name];
         _label_name.text = mystring;
         
+        _imageshow.image = _pet.cover;
         
     }
     
@@ -84,7 +85,7 @@
     
     NSString *mystring= [NSString stringWithFormat:@"%@",_pet.name];
     _label_name.text = mystring;
-    NSString *mystring2= [NSString stringWithFormat:@"Your %@ named %@ is an %@ %@ with %@ years old",_pet.type,_pet.name,_pet.race,_pet.gender,_pet.age];
+    NSString *mystring2= [NSString stringWithFormat:@"Your %@ named %@ is an %@",_pet.type,_pet.name,_pet.race];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Details" message:mystring2 delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
 

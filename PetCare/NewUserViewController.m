@@ -12,6 +12,9 @@
 
 @interface NewUserViewController ()
 
+@property (nonatomic) UIImage* imagem;
+
+
 @end
 
 @implementation NewUserViewController
@@ -38,12 +41,19 @@
     if(_pet){
         
         self.name_value.text = _pet.name;
-        self.gender_value.text = _pet.gender;
         self.type_value.text = _pet.type;
         self.race_value.text = _pet.race;
-        self.age_value.text = _pet.age;
         
+        
+        if(_pet.cover) {
+            [_inserirNovaimagemButton setHidden:YES];
+            [_petImageView setImage:_pet.cover];
+            
+        }
+        self.navigationItem.title = [_pet.name uppercaseString];
+
     }
+    
         
 }
 
@@ -65,8 +75,10 @@
     mypet.name=_name_value.text;
     mypet.type=_type_value.text;
     mypet.race=_race_value.text;
-    mypet.gender=_gender_value.text;
-    mypet.age=_age_value.text;
+    
+    if(_imagem)
+        mypet.cover=_petImageView.image;
+
     
     if([[self delegate] respondsToSelector:@selector(addPet:)])
         [[self delegate] addPet:mypet];
@@ -74,5 +86,39 @@
 }
 
 
+
+- (IBAction)adicionarImagem:(id)sender {
+    
+    UIImagePickerController *imagePicker = [[UIImagePickerController alloc]init];
+    imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+    imagePicker.allowsEditing = YES;
+    imagePicker.delegate = self;
+    
+    [self presentViewController:imagePicker animated: YES completion:nil];
+    
+}
+
+
+
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
+    UIImage * img = info[UIImagePickerControllerEditedImage];
+    
+    if(!img){
+        img =  info[UIImagePickerControllerEditedImage];
+    }
+    
+    self.imagem = img;
+    
+    [_inserirNovaimagemButton setHidden:YES];
+    [_petImageView setImage:self.imagem];
+    
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    
+
+    
+}
+    
+    
 
 @end

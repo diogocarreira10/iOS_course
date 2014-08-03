@@ -17,6 +17,7 @@
 
 @interface LocalUserViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *label_name;
+@property (weak, nonatomic) IBOutlet UIImageView *imageshow;
 
 
 
