@@ -312,13 +312,38 @@
                                     <action selector="adicionarImagem:" destination="aCj-Rd-IU7" eventType="touchUpInside" id="CX5-md-dGg"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ALERT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ViE-0l-sze">
+                                <rect key="frame" x="50" y="513" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.98545017580000005" blue="0.99714448119999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="highlightedColor" red="0.0" green="2.9595845460000001e-05" blue="0.36086107340000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Off" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TNk-Ix-xdS">
+                                <rect key="frame" x="113" y="513" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Add" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4dJ-WQ-Xxq">
+                                <rect key="frame" x="168" y="509" width="102" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="aCj-Rd-IU7" id="Vwm-fF-aGF"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.051534493850000002" green="0.70423047309999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="DNH-tx-KoO"/>
                     <connections>
+                        <outlet property="alertaTextField" destination="4dJ-WQ-Xxq" id="juI-p3-ML8"/>
                         <outlet property="inserirNovaimagemButton" destination="Pgi-F2-qlG" id="Pda-xY-qqz"/>
                         <outlet property="name_value" destination="mD8-Hd-Ork" id="354-AV-Aef"/>
+                        <outlet property="notificacoesEstadoLabel" destination="TNk-Ix-xdS" id="Sba-9Q-sB8"/>
                         <outlet property="petImageView" destination="jwH-Kl-B2x" id="SHd-Wi-OkW"/>
                         <outlet property="race_value" destination="Q0A-p6-vwR" id="sNc-8T-WjV"/>
                         <outlet property="type_value" destination="cqG-ef-XdE" id="feV-G0-A5P"/>

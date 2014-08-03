@@ -14,6 +14,6 @@
 @property (nonatomic) NSString* race;
 @property (nonatomic) NSString* type;
 @property (nonatomic) UIImage *cover;
-
+@property (nonatomic) NSDate *data;
 
 @end

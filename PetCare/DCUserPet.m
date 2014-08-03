@@ -11,6 +11,7 @@
 static NSString* nameKey = @"DCUnameKey";
 static NSString* typeKey = @"DCUtypeKey";
 static NSString* raceKey = @"DCUraceKey";
+static NSString* dateKey = @"DCUDateKey";
 
 
 
@@ -24,6 +25,7 @@ static NSString* raceKey = @"DCUraceKey";
     self.name = [aDecoder decodeObjectForKey:nameKey];
     self.type = [aDecoder decodeObjectForKey:typeKey];
     self.race = [aDecoder decodeObjectForKey:raceKey];
+    self.data = [aDecoder decodeObjectForKey:dateKey];
     
     NSData *imageData = [aDecoder decodeObjectForKey:@"DCImagem"];
     if(imageData){
@@ -40,7 +42,7 @@ static NSString* raceKey = @"DCUraceKey";
     [aCoder encodeObject:self.name forKey:nameKey];
     [aCoder encodeObject:self.type forKey:typeKey];
     [aCoder encodeObject:self.race forKey:raceKey];
-
+    [aCoder encodeObject:self.data forKey:dateKey];
     
     NSData *imageData = UIImagePNGRepresentation(self.cover);
     [aCoder encodeObject:imageData forKey:@"DCImagem"];

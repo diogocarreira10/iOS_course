@@ -12,8 +12,31 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+    
+    UILocalNotification *localNotification = [launchOptions objectForKey:UIApplicationLaunchOptionsAnnotationKey];
+    
+    if(localNotification)
+        application.applicationIconBadgeNumber = 0;
+    
+    
     // Override point for customization after application launch.
     return YES;
+}
+
+-(void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification{
+    
+    UIApplicationState state = [application applicationState];
+    if(state == UIApplicationStateActive){
+        
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:notification.alertBody delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alert show];
+        
+    }
+    application.applicationIconBadgeNumber = 0;
+    
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
