@@ -39,7 +39,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
    NewUserViewController *details = segue.destinationViewController;
@@ -47,7 +46,6 @@
     
 
 }
-
 
 #pragma mark - Table view data source
 
@@ -60,8 +58,6 @@
 {
     return [_pets count];
 }
-
-
 
 
 -(void) addPet:(DCUserPet *)pet{
@@ -189,11 +185,11 @@
 - (IBAction)editar:(id)sender {
     
     if(![self.tableView isEditing]){
-        _editarButton.title=@"Terminar";
+        _editarButton.title=@"Done";
         [self.tableView setEditing:YES animated:YES];
     }
     else{
-        _editarButton.title=@"Editar";
+        _editarButton.title=@"Edit";
         [self.tableView setEditing:NO animated:YES];
     }
     

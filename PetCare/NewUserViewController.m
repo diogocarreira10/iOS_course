@@ -56,11 +56,11 @@
             
         }
         self.navigationItem.title = [_pet.name uppercaseString];
-
+        
     }
     _alertaAdicionado = NO;
     
-        
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -81,6 +81,7 @@
     mypet.name=_name_value.text;
     mypet.type=_type_value.text;
     mypet.race=_race_value.text;
+
     
     
     if(_imagem)
@@ -94,7 +95,7 @@
     
     if([[self delegate] respondsToSelector:@selector(addPet:)])
         [[self delegate] addPet:mypet];
-
+    
 }
 
 
@@ -126,12 +127,8 @@
     [_petImageView setImage:self.imagem];
     
     [picker dismissViewControllerAnimated:YES completion:nil];
-    
-    
 
-    
 }
-
 
 -(void) textFieldDidEndEditing:(UITextField *)textField{
     
@@ -140,16 +137,16 @@
     
     NSString *data = [formater stringFromDate:_picker.date];
     [_alertaTextField setText:data];
-
+    
     [_notificacoesEstadoLabel setText:@"On"];
-     _alertaAdicionado = YES;
+    _alertaAdicionado = YES;
     
 }
 
 -(void) addLocalNotification: (DCUserPet*) pet {
     
-    UILocalNotification *localNotification = [[UILocalNotification alloc]init];
-    localNotification.fireDate = pet.data;
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = _picker.date;
     localNotification.alertBody = [NSString stringWithFormat:@"Alert for the pet %@", pet.name];
     localNotification.alertAction = @"Open Pets";
     localNotification.timeZone = [NSTimeZone defaultTimeZone];
@@ -158,9 +155,6 @@
     
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
-    
-    
 }
-    
 
 @end

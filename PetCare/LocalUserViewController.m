@@ -28,26 +28,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
-    
-    /*NSData *petData = [[NSUserDefaults standardUserDefaults]objectForKey:@"NewUserViewController"];
-    DCUserPet *mypet;
-    if(petData)
-    {
-    mypet = [NSKeyedUnarchiver unarchiveObjectWithData:petData];
-    
-    NSString *mystring= [NSString stringWithFormat:@"Your %@ named %@",mypet.type,mypet.name];
-    
-    NSString *mystring2= [NSString stringWithFormat:@"is an %@ %@ with %@ years old",mypet.race,mypet.gender, mypet.age];
-        
-        
-    NSLog(@"%@",mystring);
-    NSLog(@"%@",mystring2);
-        
-    _output.text = mystring;
-    _output2.text = mystring2;
-    }*/
+
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -81,14 +62,17 @@
 
 - (IBAction)your_details:(id)sender {
     
-    
-    
     NSString *mystring= [NSString stringWithFormat:@"%@",_pet.name];
     _label_name.text = mystring;
     NSString *mystring2= [NSString stringWithFormat:@"Your %@ named %@ is an %@",_pet.type,_pet.name,_pet.race];
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Details" message:mystring2 delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
     [alert show];
 
+    
+}
+
+- (IBAction)veterinary:(id)sender {
+    
     
 }
 @end

@@ -32,7 +32,7 @@ static NSString* dateKey = @"DCUDateKey";
         self.cover = [UIImage imageWithData:imageData];
         
     }
-
+    
     
     return self;
 }

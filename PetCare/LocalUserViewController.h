@@ -26,4 +26,6 @@
 @property (nonatomic) DCUserPet *pet;
 - (IBAction)your_details:(id)sender;
 
+- (IBAction)veterinary:(id)sender;
+
 @end
