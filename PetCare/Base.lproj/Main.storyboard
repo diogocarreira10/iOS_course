@@ -33,12 +33,13 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-21-p4Q">
-                                        <rect key="frame" x="0.0" y="97" width="320" height="25"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="187" translatesAutoresizingMaskIntoConstraints="NO" id="xnZ-21-p4Q">
+                                        <rect key="frame" x="61" y="90" width="187" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-MediumItalic" family="Helvetica Neue" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="22"/>
                                         <color key="textColor" red="1" green="0.98545017580000005" blue="0.99714448119999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CKv-7D-pzP">
                                         <rect key="frame" x="0.0" y="68" width="80" height="21"/>
@@ -47,11 +48,11 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cf5-bp-Yov">
-                                        <rect key="frame" x="111" y="130" width="99" height="30"/>
+                                        <rect key="frame" x="77" y="309" width="166" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="0.0" green="2.9595845460000001e-05" blue="0.36086107340000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <state key="normal" title="Your Details">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="DETAILS">
                                             <color key="titleColor" red="0.9791159653" green="1" blue="0.97802253579999998" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
@@ -59,8 +60,36 @@
                                             <action selector="your_details:" destination="ya8-8k-tby" eventType="touchUpInside" id="XxR-w3-YLu"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-Qw-GoX">
-                                        <rect key="frame" x="40" y="238" width="240" height="128"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqf-Qw-GoX">
+                                        <rect key="frame" x="40" y="149" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="veterinary.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Cx2-CN-7dZ">
+                                        <rect key="frame" x="37" y="440" width="88" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cVE-eW-JwQ">
+                                        <rect key="frame" x="20" y="396" width="123" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="VETERINARY">
+                                            <color key="titleColor" red="0.9791159653" green="1" blue="0.97802253579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2T-vI-blj">
+                                        <rect key="frame" x="177" y="396" width="123" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="EXPENSES">
+                                            <color key="titleColor" red="0.9791159653" green="1" blue="0.97802253579999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Money.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vKz-kH-7jC">
+                                        <rect key="frame" x="194" y="440" width="88" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -79,7 +108,7 @@
             </objects>
             <point key="canvasLocation" x="-1259" y="545"/>
         </scene>
-        <!--Pet Table View Controller - Root View Controller-->
+        <!--Pet Table View Controller - PetCare-->
         <scene sceneID="kVI-e8-CBI">
             <objects>
                 <tableViewController id="QEi-XZ-UId" customClass="DCPetTableViewController" sceneMemberID="viewController">
@@ -112,7 +141,7 @@
                             <outlet property="delegate" destination="QEi-XZ-UId" id="4BU-hw-wWd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="puL-D9-E1N">
+                    <navigationItem key="navigationItem" title="PetCare" id="puL-D9-E1N">
                         <barButtonItem key="leftBarButtonItem" title="Edit" id="0BW-tl-OgE">
                             <connections>
                                 <action selector="editar:" destination="QEi-XZ-UId" id="6T1-Og-RWP"/>
@@ -297,11 +326,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jwH-Kl-B2x">
-                                <rect key="frame" x="1" y="68" width="320" height="156"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgi-F2-qlG">
-                                <rect key="frame" x="1" y="65" width="320" height="156"/>
+                                <rect key="frame" x="0.0" y="65" width="320" height="156"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="Click to add image">
@@ -355,7 +384,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Money.jpg" width="537" height="525"/>
         <image name="login_icon.png.png" width="279" height="180"/>
+        <image name="veterinary.jpg" width="553" height="543"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

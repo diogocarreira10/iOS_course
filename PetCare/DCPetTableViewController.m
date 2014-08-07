@@ -113,6 +113,9 @@
     DCUserPet *pet = [_pets objectAtIndex:indexPath.row];
     cell.textLabel.text = pet.name;
 
+    if(pet.cover)
+        cell.imageView.image = pet.cover;
+
     cell.accessoryType = UITableViewCellAccessoryCheckmark;
     cell.tintColor = [UIColor colorWithRed:100.0/255.0 green:220/255.0 blue:191.0/255.0 alpha:1];
     return cell;

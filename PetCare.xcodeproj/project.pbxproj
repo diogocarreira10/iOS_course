@@ -27,6 +27,8 @@
 		586020791969AB6D006F2DE8 /* PetCareTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 586020781969AB6D006F2DE8 /* PetCareTests.m */; };
 		586020871969B847006F2DE8 /* introimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 586020861969B847006F2DE8 /* introimage.png */; };
 		5860208A1969C389006F2DE8 /* pet.m in Sources */ = {isa = PBXBuildFile; fileRef = 586020891969C389006F2DE8 /* pet.m */; };
+		588D8DDE1993CE4A00204D17 /* veterinary.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 588D8DDD1993CE4A00204D17 /* veterinary.jpg */; };
+		588D8DE01993CEA200204D17 /* Money.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 588D8DDF1993CEA200204D17 /* Money.jpg */; };
 		58C16B22196F5CE4008877BF /* LocalUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58C16B21196F5CE4008877BF /* LocalUserViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +72,8 @@
 		586020861969B847006F2DE8 /* introimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = introimage.png; sourceTree = "<group>"; };
 		586020881969C389006F2DE8 /* pet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pet.h; path = ../pet.h; sourceTree = "<group>"; };
 		586020891969C389006F2DE8 /* pet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pet.m; path = ../pet.m; sourceTree = "<group>"; };
+		588D8DDD1993CE4A00204D17 /* veterinary.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = veterinary.jpg; sourceTree = "<group>"; };
+		588D8DDF1993CEA200204D17 /* Money.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Money.jpg; sourceTree = "<group>"; };
 		58C16B20196F5CE4008877BF /* LocalUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalUserViewController.h; sourceTree = "<group>"; };
 		58C16B21196F5CE4008877BF /* LocalUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalUserViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +159,8 @@
 				58353F1B197A9415003B2866 /* login_icon.png.png */,
 				586020881969C389006F2DE8 /* pet.h */,
 				586020861969B847006F2DE8 /* introimage.png */,
+				588D8DDD1993CE4A00204D17 /* veterinary.jpg */,
+				588D8DDF1993CEA200204D17 /* Money.jpg */,
 				586020551969AB6D006F2DE8 /* PetCare-Info.plist */,
 				586020561969AB6D006F2DE8 /* InfoPlist.strings */,
 				586020591969AB6D006F2DE8 /* main.m */,
@@ -260,9 +266,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				588D8DDE1993CE4A00204D17 /* veterinary.jpg in Resources */,
 				586020871969B847006F2DE8 /* introimage.png in Resources */,
 				58353F1C197A9415003B2866 /* login_icon.png.png in Resources */,
 				586020661969AB6D006F2DE8 /* Images.xcassets in Resources */,
+				588D8DE01993CEA200204D17 /* Money.jpg in Resources */,
 				586020581969AB6D006F2DE8 /* InfoPlist.strings in Resources */,
 				586020611969AB6D006F2DE8 /* Main.storyboard in Resources */,
 			);
